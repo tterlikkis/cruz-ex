@@ -1,0 +1,18 @@
+<div class="background">
+    <div class="canvas">
+        <h1 class="title">Cruz Example</h1>
+        <mat-tab-group class="overflow-hidden">
+            <mat-tab label="List View">
+                <div class="header-backdrop">
+                    <header-card (onAdd)="openAdd()"></header-card>
+                </div>
+                <div *ngFor="let user of userService.viewedUsers" >
+                    <user-card [user]="user" (onEdit)="openEdit(user)"></user-card>
+                </div>
+            </mat-tab>
+            <mat-tab label="Analysis View">
+                <group-handler></group-handler>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+.parent {
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-inline: 1rem;
+}
+
+.div3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.vertical-stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    color: slategray;
+}
+
+.value {
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}

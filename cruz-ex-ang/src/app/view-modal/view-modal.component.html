@@ -1,0 +1,40 @@
+<h1 mat-dialog-title>{{ user.nameString() }}</h1>
+<div mat-dialog-content class="parent">
+    <div class="div1">
+        <img src="../assets/icon.jpg" width="100rem" height="100rem" style="border-radius: 100%;">
+    </div>
+    <div class="div2">
+        <div class="div3">
+            <div class="vertical-stack">
+                <span>Age</span>
+                <span class="value">{{ user.age! }}</span>
+            </div>
+            <div class="vertical-stack">
+                <span>DOB</span>
+                <span class="value">{{ user.dobString() }}</span>
+            </div>
+            <div class="vertical-stack">
+                <span>Salary</span>
+                <span class="value">{{ user.salaryString() }}</span>
+            </div>
+        </div>
+        <div class="vertical-stack">
+            <span>Address</span>
+            <span class="value">{{ user.addressString() }}</span>
+        </div>
+    </div>
+</div>
+<div mat-dialog-actions>
+    <button mat-stroked-button (click)="close()" color="accent">
+        <mat-icon>close</mat-icon>
+        <span>Close</span>
+    </button>
+    <button mat-stroked-button (click)="edit()">
+        <mat-icon>edit</mat-icon>
+        <span>Edit</span>
+    </button>
+    <button mat-stroked-button (click)="delete()" color="warn">
+        <mat-icon>delete</mat-icon>
+        <span>Delete</span>
+    </button>
+</div>

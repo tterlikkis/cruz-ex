@@ -1,0 +1,45 @@
+.tab-view {
+    padding-inline: 1rem;
+}
+
+.group {
+    width: 100%;
+    margin-right: .5rem;
+}
+
+.card {
+    margin: 1rem;
+    padding: 1rem;
+    width: fit-content;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-holder {
+    width: 100%;
+    align-items: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+input {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+mat-form-field {
+    max-width: 5rem;
+    margin-inline: 1rem;
+}

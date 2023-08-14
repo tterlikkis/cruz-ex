@@ -1,0 +1,32 @@
+.edit-modal {
+    border-radius: 0;
+}
+
+.text-right-align {
+    text-align: right;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+input {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+mat-form-field {
+    margin-inline: .5rem;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: row;
+    margin-inline: 1rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}

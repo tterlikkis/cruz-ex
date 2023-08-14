@@ -1,0 +1,5 @@
+<mat-card class="card" (click)="wrapperClick()">
+    <avatar [file]="user.image"></avatar>
+    <span class="text-center">{{ user.nameString() }}</span>
+    <span class="text-center">{{ user.age! }}</span>
+</mat-card>

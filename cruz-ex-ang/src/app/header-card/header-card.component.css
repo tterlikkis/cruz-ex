@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-inline: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.sort-by {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: .5rem;
+}
+
+.form-field {
+    margin-top: 1.3rem;
+}

@@ -1,0 +1,26 @@
+<div class="column tab-view">
+    <div *ngFor="let group of ageGroups" class="row">
+        <age-group class="group" [group]="group"></age-group>
+        <button mat-icon-button color="warn" class="square" (click)="deleteClick(group.groupNo)">
+            <mat-icon>delete</mat-icon>
+        </button>
+    </div>
+    <div class="column card-holder">
+        <mat-card class="card column">
+            <div class="row">
+                <mat-form-field>
+                    <mat-label>Min</mat-label>
+                    <input matInput type="number" [(ngModel)]="min"/>
+                </mat-form-field>
+                <mat-form-field>    
+                    <mat-label>Max</mat-label>
+                    <input matInput type="number" [(ngModel)]="max"/>
+                </mat-form-field>
+            </div>
+            <button mat-raised-button color="primary" (click)="addClick()">
+                <mat-icon>add</mat-icon>
+                <span>Add Age Group</span>
+            </button>
+        </mat-card>
+    </div>
+</div>

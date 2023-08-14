@@ -1,0 +1,27 @@
+<mat-card class="header">
+    <mat-card class="sort-by">
+        <mat-label>Sort by Salary</mat-label>
+        <mat-button-toggle-group [(ngModel)]="sortBy" (change)="sort()">
+            <mat-button-toggle value="asc">
+                <mat-icon>arrow_upward</mat-icon>
+            </mat-button-toggle>
+            <mat-button-toggle value="desc">
+                <mat-icon>arrow_downward</mat-icon>
+            </mat-button-toggle>
+        </mat-button-toggle-group>
+    </mat-card>
+    <mat-form-field class="form-field">
+        <mat-label>Filter by</mat-label>
+        <mat-select [(ngModel)]="filterBy">
+            <mat-option *ngFor="let option of filterByOptions" [value]="option">{{ option }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field style="width: 50%;" class="form-field">
+        <mat-label>Filter</mat-label>
+        <input matInput [(ngModel)]="filterValue" [disabled]="filterBy === ''" (ngModelChange)="filter()"/>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="add()">
+        <mat-icon>add</mat-icon>
+        <span>Add User</span>
+    </button>
+</mat-card>

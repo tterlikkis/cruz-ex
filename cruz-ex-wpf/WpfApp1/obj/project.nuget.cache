@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Oum2ZD2aF+azONap08/X/PJoh6jRWDV5E+nEHwzXBBAVCK96XLzZFaYyCOwm17Tn4/gVSj6JuBfrY6yhkQlG4w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sean\\cruz-ex\\cruz-ex-wpf\\WpfApp1\\WpfApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sean\\.nuget\\packages\\microsoft.web.webview2\\1.0.1901.177\\microsoft.web.webview2.1.0.1901.177.nupkg.sha512",
+    "C:\\Users\\Sean\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

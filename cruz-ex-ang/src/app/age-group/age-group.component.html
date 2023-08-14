@@ -1,0 +1,15 @@
+<mat-expansion-panel class="panel">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            {{ titleString() }}
+        </mat-panel-title>
+        <mat-panel-description>
+            {{ averageString() }}
+        </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="row">
+        <div *ngFor="let user of group.users">
+            <small-user-card [user]="user"></small-user-card>
+        </div>
+    </div>
+</mat-expansion-panel>
