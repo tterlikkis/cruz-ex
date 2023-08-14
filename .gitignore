@@ -1,0 +1,9 @@
+#Angular
+cruz-ex-ang/dist
+cruz-ex-ang/node_modules
+cruz-ex-ang/.vscode
+cruz-ex-ang/.angular
+
+#WPF
+cruz-ex-wpf/WpfApp1/bin
+cruz-ex-wpf/WpfApp1/bin/Debug
