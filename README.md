@@ -10,5 +10,6 @@ The WPF is a shell to run the webpage within, much like a browser. However it al
 Visual Studio 2022  
 Node version 18.16.0  
 
+## Notes ##
 Be sure to run `npm install` inside `cruz-ex-ang` directory.  
 When booting up, please allow a few seconds for the page to display, as the node server needs to start.
